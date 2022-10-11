@@ -5,9 +5,10 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Alert from 'react-bootstrap/Alert';
+import Accordion from 'react-bootstrap/Accordion';
 
 
-class search extends React.Component {
+class Shapoopy extends React.Component {
 
     render() {
         return (
@@ -32,14 +33,14 @@ class search extends React.Component {
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>City</Accordion.Header>
                                 <Accordion.Body>
-                                    <p>{this.props.city.display_name}</p>
+                                    <h2>{this.props.city.display_name}</h2>
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header>Latitude and Longitude</Accordion.Header>
                                 <Accordion.Body>
-                                    <p>{this.props.city.lat}</p>
-                                    <p>{this.props.city.lon}</p>
+                                    <h2>{this.props.city.lat}</h2>
+                                    <h2>{this.props.city.lon}</h2>
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
@@ -49,4 +50,4 @@ class search extends React.Component {
     }
 }
 
-export default search;
+export default Shapoopy;
