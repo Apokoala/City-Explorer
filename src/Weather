@@ -1,0 +1,14 @@
+import React from 'react';
+
+class Weather extends React.Component {
+    render() {
+        return(
+            <>
+            this.props.weather.map(day => (
+                <h3>{day.date}</h3>
+                <p>{}</p>
+            ))
+            <>
+        )
+    }
+}
